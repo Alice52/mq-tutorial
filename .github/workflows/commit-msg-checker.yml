@@ -1,0 +1,12 @@
+# https://github.com/marketplace/actions/conventional-commit-lint
+
+name: Conventional Commit Lint
+
+on: [push, pull_request]
+
+jobs:
+  commit-lint:
+    runs-on: ubuntu-20.04
+    steps:
+      # conventional style
+      - uses: ahmadnassri/action-commit-lint@v2.0.4
